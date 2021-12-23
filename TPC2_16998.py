@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import mean_absolute_error, r2_score
+
 
 folder = "Covid2021"
 file_name = "Covid_Braga.json"
