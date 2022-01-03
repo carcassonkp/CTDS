@@ -35,9 +35,7 @@ for key,value in dict_counties.items():
   day_Year = []
   for entry in data_1:
     if entry['concelho'] == sel_county:
-      # day_obj=datetime.strptime(entry['data'], '%d-%m-%Y')
       day = datetime.strptime(entry['data'], '%d-%m-%Y').timetuple().tm_yday
-      # se for 6 de janeiro entao guarda o valor 6/365, se for 28 fev guarda o valor 59/365
       num_cases=entry['confirmados_1']
       cases.append(num_cases)
       day_Year.append(day)
